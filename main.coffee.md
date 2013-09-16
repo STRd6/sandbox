@@ -5,7 +5,7 @@ Sandbox creates a popup window in which you can run code.
 
 You can pass in a width and a height to set the size of the window.
 
-    @Sandbox = ({name, width, height, methods}={}) ->
+    module.exports = ({name, width, height, methods}={}) ->
       name ?= "sandbox" + new Date
       width ?= 800
       height ?= 600
