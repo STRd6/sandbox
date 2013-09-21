@@ -1,4 +1,4 @@
-{
+window["STRd6/sandbox:master"]({
   "source": {
     "LICENSE": {
       "path": "LICENSE",
@@ -126,4 +126,4 @@
   "progenitor": {
     "url": "http://strd6.github.io/editor/"
   }
-}
+});
