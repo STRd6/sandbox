@@ -21,8 +21,18 @@ Pass in functions to attach to the running window. Useful for things like
 `onerror` or other utilities if you would like the running code to be able to
 communicate back to the parent.
 
-      Object.extend sandbox, methods
+      extend sandbox, methods
 
 The newly created window is returned.
 
       return sandbox
+
+Helpers
+-------
+
+    extend = (target, sources...) ->
+      for source in sources
+        for name of source
+          target[name] = source[name]
+
+      return target
