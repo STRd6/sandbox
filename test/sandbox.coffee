@@ -6,4 +6,6 @@ describe "sandbox", ->
 
     assert sandbox
 
+    assert sandbox != window, "Popup should not be this window"
+
     sandbox.close()
