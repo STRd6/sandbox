@@ -23,6 +23,8 @@ communicate back to the parent.
 
       extend sandbox, methods
 
+      autoClose(sandbox)
+
 The newly created window is returned.
 
       return sandbox
@@ -36,3 +38,13 @@ Helpers
           target[name] = source[name]
 
       return target
+
+Close sandbox when closing our window.
+
+    autoClose = (sandbox) ->
+      closer = ->
+        window.removeEventListener "unload", closer
+        widget.close()
+
+      sandbox.addEventListener "unload", closer
+      window.addEventListener "unload", closer
