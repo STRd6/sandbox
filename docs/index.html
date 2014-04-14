@@ -61,7 +61,9 @@
 communicate back to the parent.</p>
 
             </div>
-            <div class="content"><pre><code class="lang-coffeescript">  extend sandbox, methods</code></pre>
+            <div class="content"><pre><code class="lang-coffeescript">  extend sandbox, methods
+
+  autoClose(sandbox)</code></pre>
 </div>
         </li>
         
@@ -106,6 +108,25 @@ communicate back to the parent.</p>
       target[name] = source[name]
 
   <span class="keyword">return</span> target</code></pre>
+</div>
+        </li>
+        
+        
+        <li id="section-7">
+            <div class="annotation">
+              <div class="pilwrap">
+                <a class="pilcrow" href="#section-7">&#182;</a>
+              </div>
+              <p>Close sandbox when closing our window.</p>
+
+            </div>
+            <div class="content"><pre><code class="lang-coffeescript"><span class="function"><span class="title">autoClose</span></span> = (sandbox) -&gt;
+  <span class="function"><span class="title">closer</span></span> = -&gt;
+    window.removeEventListener <span class="string">"unload"</span>, closer
+    widget.close()
+
+  sandbox.addEventListener <span class="string">"unload"</span>, closer
+  window.addEventListener <span class="string">"unload"</span>, closer</code></pre>
 </div>
         </li>
         
