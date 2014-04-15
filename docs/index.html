@@ -123,7 +123,7 @@ communicate back to the parent.</p>
             <div class="content"><pre><code class="lang-coffeescript"><span class="function"><span class="title">autoClose</span></span> = (sandbox) -&gt;
   <span class="function"><span class="title">closer</span></span> = -&gt;
     window.removeEventListener <span class="string">"unload"</span>, closer
-    widget.close()
+    sandbox.close()
 
   sandbox.addEventListener <span class="string">"unload"</span>, closer
   window.addEventListener <span class="string">"unload"</span>, closer</code></pre>
