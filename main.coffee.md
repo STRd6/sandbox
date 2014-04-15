@@ -44,7 +44,7 @@ Close sandbox when closing our window.
     autoClose = (sandbox) ->
       closer = ->
         window.removeEventListener "unload", closer
-        widget.close()
+        sandbox.close()
 
       sandbox.addEventListener "unload", closer
       window.addEventListener "unload", closer
