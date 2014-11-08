@@ -6,7 +6,7 @@ Sandbox creates a popup window in which you can run code.
 You can pass in a width and a height to set the size of the window.
 
     module.exports = ({name, width, height, methods}={}) ->
-      name ?= "sandbox" + new Date
+      name ?= "sandbox-#{Math.random()}"
       width ?= 800
       height ?= 600
       methods ?= {}
