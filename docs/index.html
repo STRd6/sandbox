@@ -37,7 +37,7 @@
 
             </div>
             <div class="content"><pre><code class="lang-coffeescript">module.<span class="function"><span class="title">exports</span></span> = ({name, width, height, methods}={}) -&gt;
-  name ?= <span class="string">"sandbox"</span> + <span class="keyword">new</span> Date
+  name ?= <span class="string">"sandbox-<span class="subst">#{Math.random()}</span>"</span>
   width ?= <span class="number">800</span>
   height ?= <span class="number">600</span>
   methods ?= {}
