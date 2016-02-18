@@ -20,7 +20,7 @@
     },
     "pixie.cson": {
       "path": "pixie.cson",
-      "content": "version: \"0.2.5\"\n",
+      "content": "version: \"0.2.4\"\n",
       "mode": "100644",
       "type": "blob"
     },
@@ -39,7 +39,7 @@
     },
     "pixie": {
       "path": "pixie",
-      "content": "module.exports = {\"version\":\"0.2.5\"};",
+      "content": "module.exports = {\"version\":\"0.2.4\"};",
       "type": "blob"
     },
     "test/sandbox": {
@@ -51,10 +51,10 @@
   "progenitor": {
     "url": "http://www.danielx.net/editor/"
   },
-  "version": "0.2.5",
+  "version": "0.2.4",
   "entryPoint": "main",
   "repository": {
-    "branch": "master",
+    "branch": "v0.2.4",
     "default_branch": "master",
     "full_name": "distri/sandbox",
     "homepage": null,
